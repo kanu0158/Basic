@@ -13,7 +13,7 @@ public class Calendar{
 			System.out.println("0.stop 1.start");
 			switch(sc.nextInt()){
 				case 0:System.out.println("exit!");return;
-				case 1: System.out.println("start?");
+				case 1: System.out.println("month?");
 						int mon = sc.nextInt();
 						String end = "";
 						switch(mon){

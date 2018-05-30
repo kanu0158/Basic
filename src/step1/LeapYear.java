@@ -21,16 +21,16 @@ public class LeapYear{
 						int y = sc.nextInt();
 						String result = "";
 						if(y%400 == 0){
-							result = "����";
+							result = "윤년";
 						}else if(y%100 == 0){
-							result = "���";
+							result = "평년";
 						}else if(y%4 == 0){
-							result = "����";
+							result = "윤년";
 						}else{
-							result = "���";
+							result = "평년";
 						}
 
-						System.out.println(y + "���� "+ result + "�Դϴ�.");
+						System.out.println(y + "year is "+ result);
 						break;
 			}
 		}

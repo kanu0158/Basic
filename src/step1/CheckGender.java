@@ -28,14 +28,12 @@ public class CheckGender{
 						String name = sc.next();
 						System.out.println("ssn?");
 						String ssn = sc.next();
-		
 						char ch =ssn.charAt(7);
 
 						if(ch=='0' || ch=='7' || ch=='8' || ch=='9'){
 							System.out.println("error");
 							break;
 						} 
-
 
 						String gender = "";
 
