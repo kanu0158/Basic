@@ -1,6 +1,6 @@
 package step4;
 
-public class MatrixVertical2 {
+public class Zigzag {
 
 	public static void main(String[] args) {
 		int k = 0;
