@@ -1,7 +1,6 @@
 package step4;
 
 public class Snail {
-
 	public static void main(String[] args) {
 		int k = 0;
 		int x=0,y=-1,option =1, count = 4;
