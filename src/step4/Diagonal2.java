@@ -6,8 +6,8 @@ public class Diagonal2 {
 		int[][] mtx = new int[5][5];
 		/*for(int i=0;i<9;i++) {
 			for(int j=0;j<=4;j++) {
-				//k = i-j; //00부터 7시방향
-				k = 4-(i-j);//44부터 5시방향
+				k = i-j; //00부터 7시방향
+				//k = 4-(i-j);//04부터 5시방향
 				if(k < 0 || k > 4) {
 					continue;
 				}
@@ -16,8 +16,8 @@ public class Diagonal2 {
 		}*/
 		/*for(int i=0;i<9;i++) {
 			for(int j=4;j>=0;j--) {
-				//k = i-j; //00부터 1시방향
-				k = 4-(i-j);//44부터 11시방향
+				k = i-j; //00부터 1시방향
+				//k = 4-(i-j);//40부터 11시방향
 				if(k < 0 || k > 4) {
 					continue;
 				}
@@ -26,8 +26,8 @@ public class Diagonal2 {
 		}*/
 		/*for(int i=0;i<9;i++) {
 			for(int j=0;j<=4;j++) {
-				//k = (i-j);//40부터 11시방향
-				k = 4-(i-j);//44부터 1시방향 
+				k = (i-j);//40부터 11시방향
+				//k = 4-(i-j);//44부터 1시방향 
 				if(k < 0 || k > 4) {
 					continue;
 				}
@@ -35,17 +35,17 @@ public class Diagonal2 {
 				mtx[4-j][k] = v++;
 			}
 		}*/
-		for(int i=0;i<9;i++) {
+		/*for(int i=0;i<9;i++) {
 			for(int j=4;j>=0;j--) {
-				//k = (i-j);//40부터 5시방향
-				k = 4-(i-j);//44부터 7시방향 
+				k = (i-j);//40부터 5시방향
+				//k = 4-(i-j);//44부터 7시방향 
 				if(k < 0 || k > 4) {
 					continue;
 				}
 				System.out.println("i: "+ i + " j: "+ j + " k: " + k);
 				mtx[4-j][k] = v++;
 			}
-		}
+		}*/
 		/*int s = 0,l=0;
 		for(int i=0;i<9;i++) {
 			k = l++;
