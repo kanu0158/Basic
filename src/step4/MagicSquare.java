@@ -1,43 +1,32 @@
 package step4;
 
 public class MagicSquare {
-	public static void main(String[] args) {
-		int k = 0;
-		int x=1,y=1, n_x=0,n_y=0;
-		int[][] mtx = new int[5][5];
-		for (int i = 0; i < 5; i++) {
-				for (int j = 0; j <= 4;j++) {
-					x--;
-					y++;
-					System.out.println(x+"f"+y);
-					if(x<0) {
-						x = 4;
-					}
-					if(y>4) {
-						y = 1;
-					}
-					n_x = x - 1;
-					n_y = y + 1;
-					if(n_x<0) {
-						x = 4;
-					}
-					if(n_y>4) {
-						y = 1;
-					}
-					//System.out.println(x+"d"+y+"d"+mtx[4][3]);
-					if(mtx[4][3] == 0) {
-						mtx[x][y] = ++k;
-					}else {
-						x++;
-						mtx[x][y] = ++k;
-					}
-				}
-		}
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				System.out.print(mtx[i][j]);
-			}
-			System.out.println();
-		}
-	}
+    public static void main(String[] args) {
+        int r=0, c=2, n_r=0, n_c=0;
+        int[][] mtx = new int[5][5];
+        for(int i=1;i<=25;i++) {
+             mtx[r][c] = i;
+             n_r = r - 1;
+             n_c = c + 1;
+             if(n_r<0) {
+                 n_r = 4;
+             }
+             if(n_c>4) {
+                 n_c = 0;
+             }
+             if(mtx[n_r][n_c] == 0) {
+                 r = n_r;
+                 c = n_c;
+             }else {
+                 r++;
+             }
+        }
+        for(int i=0;i<5;i++) {
+             for(int j=0;j<5;j++) {
+                 System.out.printf("["+"%d"+"]",mtx[i][j]);
+             }
+             System.out.printf("\n");
+        }
+        
+    }
 }
