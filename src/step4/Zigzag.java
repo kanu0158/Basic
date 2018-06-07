@@ -40,11 +40,11 @@ public class Zigzag {
 				}
 			}
 		}
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				System.out.print(mtx[i][j]);
+		for(int i=0;i<5;i++) {
+			for(int j=0;j<5;j++) {
+				System.out.printf("["+"%d"+"]",mtx[i][j]);
 			}
-			System.out.println();
+			System.out.printf("\n");
 		}
 	}
 }

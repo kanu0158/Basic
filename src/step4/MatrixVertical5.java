@@ -16,11 +16,11 @@ public class MatrixVertical5 {
 					mtx[i][j] = ++k;
 			}
 		}
-		for (int i = 0; i < 7; i++) {
-			for (int j = 0; j < 7; j++) {
-				System.out.print(mtx[i][j]);
+		for(int i=0;i<7;i++) {
+			for(int j=0;j<7;j++) {
+				System.out.printf("["+"%d"+"]",mtx[i][j]);
 			}
-			System.out.println();
+			System.out.printf("\n");
 		}
 	}
 }
