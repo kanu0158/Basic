@@ -13,12 +13,10 @@ public class Matrix {
 		int v = 4;
 		int[][] mtx = new int[5][5];
 		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j <= i; j++) {
-				mtx[i][j] = ++k;
-			}
-		}
-		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5; j++) {
+				if(j<=i) {
+					mtx[i][j] = ++k;
+				}
 				result += "[" + mtx[i][j] + "]";
 			}
 			result += "\n";
@@ -31,18 +29,14 @@ public class Matrix {
 		int k = 0;
 		int v = 4;
 		int[][] mtx = new int[5][5];
-
-		for (int i = 0; i < 5; i++) {
-			for (int j = v; j < 5; j++) {
-				mtx[i][j] = ++k;
-			}
-			v--;
-		}
-
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5; j++) {
+				if(j>=v) {
+					mtx[i][j] = ++k;
+				}
 				result += "[" + mtx[i][j] + "]";
 			}
+			v--;
 			result += "\n";
 		}
 		return result;

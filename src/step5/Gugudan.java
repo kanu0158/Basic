@@ -7,12 +7,6 @@ enum GugudanButt{
 }
 public class Gugudan {
 	public static void main(String[] args) {
-		String[][] mtx = new String[9][9];
-		for(int i=0;i<8;i++) {
-			for(int j=0;j<9;j++) {
-				mtx[i][j] = String.valueOf((i+2) * (j+1));
-			}
-		}
 		while(true) {
 			GugudanButt[] buttons = {
 					GugudanButt.EXIT,
@@ -37,8 +31,8 @@ public class Gugudan {
 					result1[i] = "";
 					result2[i] = "";
 					for(int j=0;j<4;j++) {
-						result1[i] += (j+2) + " x " + (i+1) + " = " + mtx[j][i] + "   ";
-						result2[i] += (j+6) + " x " + (i+1) + " = " + mtx[j+4][i] + "   "; 
+						result1[i] += (j+2) + " x " + (i+1) + " = " + (j+2)*(i+1) + "   ";
+						result2[i] += (j+6) + " x " + (i+1) + " = " + (j+6)*(i+1) + "   "; 
 					}
 					result1[i] += "\n";
 					result3 += result1[i];

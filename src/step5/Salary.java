@@ -49,8 +49,7 @@ public class Salary {
 					}
 					result += "\n";
 				}
-				//JOptionPane.showMessageDialog(null, result);
-				JOptionPane.showMessageDialog(null,mtx);
+				JOptionPane.showMessageDialog(null, result);
 				break;
 			default:
 				break;
